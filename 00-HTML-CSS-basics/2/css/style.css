@@ -1,0 +1,79 @@
+﻿/* 2.2 */
+html {
+  font-family: Helvetica;
+  font-size: 14px;
+}
+
+header,
+footer {
+  text-align: center;
+}
+
+header {
+  background-color: #BBE8B5;
+}
+  
+footer {
+  background-color: #CFE9E6;
+}
+
+aside {
+  background-color: #E7F7C1;
+}
+
+nav {
+  background-color: #D8F19C;
+}
+
+/* 2.3 */
+
+.header {
+  font-size: 46px;
+}
+
+.footer,
+.sidebar {
+  font-size: 10px;
+}
+
+.navigation {
+  font-size: 12px;
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+}
+
+.content {
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: top;    
+  width: 55%;
+}
+
+.sidebar {
+  display: inline-block;
+  vertical-align: top;  
+  width: 20%;
+}
+
+[class$="r"] {
+  background-color: magenta;
+}
+
+[class*="a"] :not([class$="r"]) {
+  background-color: blue;
+}
+
+/* Not sure if this is 
+what you asked for in 2.3.6 */
+.header,
+.footer,
+.content,
+.navigation, 
+.sidebar {
+  font-weight: 600;
+}
+
+.oh-no-inline-styles {
+  background-color: green ! important;
+}

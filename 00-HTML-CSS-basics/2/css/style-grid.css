@@ -1,0 +1,135 @@
+﻿/* 2.5.2 */
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Helvetica;
+  font-size: 14px;
+}
+
+p, a {
+  color: #353535;
+}
+
+.main-title {
+  font-weight: bold;
+  font-size: 1.3em;
+  letter-spacing: -.8px;
+}
+
+@media all and (max-width: 48em) {
+  .main-title {
+    margin-bottom: 0px;
+  }
+}
+
+.description, .contact {
+  font-size: .85em;
+  line-height: 1.7em;
+  letter-spacing: -.1px;
+}
+
+.contact a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.lake-grid {
+  margin: 0 auto;
+  width: 80%;
+}
+
+@media all and (max-width: 64em) {
+  .lake-grid {
+    width: 95%
+  }
+}
+
+.column {
+  float: left;
+  padding: 1em;
+}
+
+@media all and (max-width: 32em) {
+  .column {
+    padding: .5em;
+  }
+}
+
+.column.third {
+  width: 33.3%;
+  position: relative;
+}
+
+.column.two-thirds {
+  width: 66.7%;
+  position: relative;
+}
+
+@media all and (max-width: 48em) {
+  header .column.third {
+    width: 100%;
+  }
+
+  header .column.two-thirds {
+    width: 100%;
+  }
+
+  section .column.third {
+    width: 50%;
+  }
+}
+
+.caption {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  padding: 1em;
+  transition: all 0.3s ease-in-out;
+}
+
+.caption:hover {
+  opacity: 1;
+}
+
+@media all and (max-width: 32em) {
+  .caption {
+    padding: .5em;
+  }
+}
+
+.caption .title {
+  background-color: rgba(255, 255, 255, 0.70);
+  font-size: .9em;
+  font-weight: bold;
+  letter-spacing: -.2px;
+  margin: 0;
+  padding: 1.5em;
+  transition: all 0.8s ease-in-out;
+}
+
+@media all and (max-width: 32em) {
+  .caption .title {
+    font-size: .8em;
+    padding: 1em;
+  }
+}
+
+.lake-grid img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  float: left;
+}

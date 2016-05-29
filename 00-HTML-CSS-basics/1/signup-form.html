@@ -1,0 +1,50 @@
+﻿<!doctype html>
+<html>
+  <head>
+    <title>exercise iv</title>
+    <meta charset="utf-8">
+    <meta name="description" content="globant ui web bootcamp">
+    <meta name="keywords" content="HTML,CSS,JavaScript,AngularJS">
+    <meta name="author" content="Leonardo Castiglioni">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
+
+  <body>
+
+    <header>
+      Sign-up form
+    </header>
+
+    <main>
+      <form class="signup">
+        <label for="firstname">First Name: </label>
+        <input type="text" name="firstname" id ="firstname" placeholder="Your first name here" required>
+        <br>
+        <label for="lastname">Last Name: </label>
+        <input type="text" name="lastname" id="lastname" placeholder="Your last name here" required>
+        <br>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" placeholder="Your email here" required>
+        <br>
+        <label for="birthday">Birthday: </label>
+        <input type="date" name="birthday" id="birthday" required>
+        <br>
+        <label for="sport">Favourite sport: </label>        
+        <select name="sport" id="sport" required>
+          <option value="" disabled selected>Select your option</option>
+          <option value="swimming">Swimming</option>
+          <option value="cycling">Cycling</option>
+          <option value="running">Running</option>
+          <option value="tennis">Tennis</option>
+          <option value="football">Football</option>
+          <option value="basketball">Basketball</option>
+        </select>
+        <br>
+        <input type="submit" name="send" value="Send">
+        <input type="reset" name="reset" value="Clear">
+      </form>
+
+    </main>
+
+  </body>
+</html>
