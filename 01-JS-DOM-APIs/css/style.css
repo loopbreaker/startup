@@ -1,0 +1,44 @@
+﻿/* 2.2 */
+html {
+  font-family: Helvetica;
+  font-size: 14px;
+}
+
+section {
+  text-align: center;
+  display: inline-block;
+  width: 65%;
+}
+
+blockquote {
+  font-size: 80%;
+}
+
+.aside {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
+  width: 27%;
+}
+
+input[name='search-box'] {
+  width: 80%;
+}
+
+.hidden-section {
+  display: none;
+}
+
+.table-placeholder table {
+  border-spacing: 0;
+  margin: 10px auto;
+  background: #000;
+  padding: 20px;
+}
+
+.table-placeholder table td {
+  padding: 2px;
+  color: #07bb07;
+  font-size: 15px;
+  font-weight: bold;
+}
