@@ -1,0 +1,52 @@
+html {
+  font-family: 'Helvetica', 'Arial';
+  font-size: 14px;
+}
+
+body {
+  width: 70%;
+  margin: auto;
+}
+
+.movie-block {
+  line-height: 1.4em;
+  font-size: .9em;
+  border-bottom: 1px solid gray;
+  padding-bottom: 15px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.content {
+  margin: 5px 0;
+}
+
+textarea {
+    width: 100%;
+    height: 115px;
+    font-family: Helvetica;
+    line-height: 1.4em;
+}
+
+button {
+  border: 0;
+  background: none;
+  font-size: 16px;
+  color: #bdbdbd;
+}
+
+button:hover {
+  color: #565656;
+}
+
+button:focus {
+  outline:0;
+}

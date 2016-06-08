@@ -1,0 +1,43 @@
+<div class="movie-block">
+
+  <h2>
+    <editable-field field-value="$ctrl.film.name" field-type="text" on-update="$ctrl.update('name', value)">
+    </editable-field>
+    <button  class="btn remove" ng-click="$ctrl.onDelete({film: $ctrl.film})" title="Removes this film from the list">
+      <i class="fa fa-times" aria-hidden="true"></i>
+    </button>
+  </h2>
+
+  <p class="content">
+    <span class="title">
+      Genre:
+    </span>
+    <editable-field field-value="$ctrl.film.genre" field-type="text" on-update="$ctrl.update('genre', value)">
+    </editable-field>
+  </p>
+
+  <p class="content">
+    <span class="title">
+      Synopsis:
+    </span>
+    <editable-area field-value="$ctrl.film.synopsis" field-type="text" on-update="$ctrl.update('synopsis', value)">
+    </editable-area>
+  </p>
+
+  <p class="content">
+    <span class="title">
+      Year:
+    </span>
+    <editable-field field-value="$ctrl.film.year" field-type="text" on-update="$ctrl.update('year', value)">
+    </editable-field>
+  </p>
+
+  <p class="content">
+    <span class="title">
+      Length:
+    </span>
+    <editable-field field-value="$ctrl.film.length" field-type="text" on-update="$ctrl.update('length', value)">
+    </editable-field>
+  </p>
+
+</div>

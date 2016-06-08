@@ -1,0 +1,11 @@
+<span ng-switch="$ctrl.editMode">
+  <input ng-switch-when="true" type="{{$ctrl.fieldType}}" ng-model="$ctrl.fieldValue">
+  <span ng-switch-default>{{$ctrl.fieldValue}}</span>
+</span>
+<button ng-click="$ctrl.handleModeChange()">
+    <i ng-if="$ctrl.editMode" class="fa fa-floppy-o" aria-hidden="true" title="Save this field"></i>
+    <i ng-if="!$ctrl.editMode" class="fa fa-pencil" aria-hidden="true" title="Edit this field"></i>
+</button>
+<button ng-if="$ctrl.editMode" ng-click="$ctrl.reset()">
+  <i class="fa fa-refresh" aria-hidden="true" title="Reset this field"></i>
+</button>

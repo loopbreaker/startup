@@ -1,0 +1,11 @@
+<div>
+  <h1>Some Films</h1>
+</div>
+<div class="movie-block">
+  <button ng-click="$ctrl.addFilm()"><i class="fa fa-film" aria-hidden="true" title="Add a new film"></i> Add new film
+  </button>
+
+</div>
+
+<film-detail ng-repeat="film in $ctrl.list" film="film" on-delete="$ctrl.deleteFilm(film)" on-update="$ctrl.updateFilm(film, prop, value)"></film-detail>
+
